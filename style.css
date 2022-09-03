@@ -224,6 +224,7 @@ a {
   padding-bottom: 29px;
   font-family: "Helvetica";
 }
+
 .banner_swiper a {
   font-size: 15px;
   letter-spacing: 3px;
@@ -239,11 +240,13 @@ a {
     font-size: 12px;
     padding: 15px 38px;
   }
+
   .banner_swiper h1 {
     font-size: 32px;
     line-height: 38px;
     padding: 20px 40px 29px 40px;
   }
+
   .banner_swiper p {
     font-size: 11px;
     letter-spacing: 2px;
@@ -262,7 +265,7 @@ a {
     padding: 20px 20px 29px 20px;
   }
   .banner_swiper p {
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 2px;
   }
   .banner_swiper {
@@ -289,6 +292,7 @@ a {
   width: 50%;
   height: 100vh;
   padding: 160px 0 0 70px;
+  z-index: 100;
 }
 
 .about-right span {
@@ -331,11 +335,13 @@ a {
     display: flex;
     flex-direction: column-reverse;
   }
+  .about-right {
+    width: 50%;
+    height: 100vh;
+    padding: 40px 0 0 0;
+  }
   .about-left {
     width: 100%;
-  }
-  .about-right {
-    padding: 130px 0 0 0px;
   }
 }
 @media (max-width: 970px) {
@@ -343,14 +349,10 @@ a {
     display: none;
   }
   .about-right span {
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 2px;
   }
-  .about-right p {
-    font-size: 11px;
-    line-height: 20px;
-    padding: 28px 0 24px 0;
-  }
+
   .about-right h1 {
     font-size: 35px;
     font-family: "Helvetica";
@@ -364,7 +366,7 @@ a {
 
 @media (max-width: 450px) {
   .about-right {
-    padding: 60px 0 0 0px;
+    padding: 15px 0 0 0px;
   }
 }
 
@@ -381,16 +383,6 @@ a {
 }
 
 @media (max-width: 550px) {
-  .about-right h1 {
-    font-size: 25px;
-    font-family: "Helvetica";
-    line-height: 29px;
-  }
-  .about-right p {
-    font-size: 11px;
-    line-height: 20px;
-    padding: 15px 0 16px 0;
-  }
 }
 
 .testimonial-swiper {
@@ -456,16 +448,17 @@ a {
   .testimonial-swiper h1 {
     font-family: "Helvetica";
     font-size: 26px;
-    line-height: 42px;
+    line-height: 32px;
     color: #222222;
     padding: 15px 0;
+    max-width: 572px;
   }
   .testimonial-swiper p {
     font-family: "Helvetica";
     max-width: 530px;
     margin: 0 auto;
     color: #777777;
-    font-size: 16px;
+    font-size: 18px;
   }
   .testimonial-swiper a {
     font-size: 13px;
@@ -486,13 +479,13 @@ a {
 }
 
 @media (max-width: 1080px) {
-  .testimonial-swiper h1 {
+  /* .testimonial-swiper h1 {
     font-family: "Helvetica";
     font-size: 20px;
     line-height: 42px;
     color: #222222;
     padding: 15px 0;
-  }
+  } */
   .swiper-button-next,
   .swiper-rtl .swiper-button-prev {
     right: 100px;
@@ -506,20 +499,10 @@ a {
 }
 
 @media (max-width: 800px) {
-  .testimonial-swiper h1 {
-    font-family: "Helvetica";
-    font-size: 16px;
-    line-height: 39px;
-    color: #222222;
-    padding: 10px 0;
+  .testimonial-swiper {
+    padding: 50px 0 117px 0;
   }
-  .testimonial-swiper p {
-    font-family: "Helvetica";
-    max-width: 400px;
-    margin: 0 auto;
-    color: #777777;
-    font-size: 14px;
-  }
+
   .testimonial-swiper a {
     font-size: 10px;
     padding: 12px 30px;
@@ -544,7 +527,7 @@ a {
 
 @media (max-width: 550px) {
   .testimonial-swiper {
-    padding: 40px 80px;
+    padding: 40px;
   }
   .swiper-button-prev,
   .swiper-rtl .swiper-button-next {
@@ -553,25 +536,6 @@ a {
   .swiper-button-next,
   .swiper-rtl .swiper-button-prev {
     display: none;
-  }
-  .testimonial-swiper h1 {
-    font-family: "Helvetica";
-    font-size: 14px;
-    line-height: 17px;
-    color: #222222;
-    padding: 10px 0;
-  }
-  .testimonial-swiper p {
-    font-family: "Helvetica";
-    max-width: 400px;
-    margin: 0 auto;
-    color: #777777;
-    font-size: 12px;
-  }
-  .testimonial-swiper h4 {
-    color: #777777;
-    font-size: 13px;
-    padding: 11px 0 0 0;
   }
 }
 .gallery {
@@ -656,6 +620,20 @@ a {
     padding: 37px 0 40px 0;
     text-align: center;
     gap: 20px;
+  }
+  .gallery {
+    padding: 24px 0 50px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-right p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .about-right h1 {
+    line-height: 29px;
+    padding-top: 10px;
   }
 }
 
@@ -779,4 +757,34 @@ a {
   background-color: #131212;
   padding: 0 14px;
   cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background: #d4b254;
+}
+
+swiper-pagination-bullet
+  swiper-pagination-bullet-active
+  swiper-pagination-bullet-active-main {
+  left: 18px;
+  height: 5px;
+  width: 50px;
+  border-radius: 20px;
+  background: #d4b254;
+}
+
+.swiper-pagination-bullet {
+  height: 5px;
+  width: 50px;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+  .footer-copyright p {
+    font-size: 13px;
+    opacity: 0.5;
+    padding-top: 1px;
+    color: #fff;
+  }
 }
